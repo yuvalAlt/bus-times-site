@@ -10,11 +10,12 @@
 <body>
 <p>Please select the bus route and bus stop for times.</p>
 
-<div id="YRT">
+<div id="bus_lines">
+    <h3><u>YRT Bus Lines</u></h3>
     <div id="YRT_routes">
         <form id="YRT_routes_form">
             <fieldset>
-                <label>Please select a route:</label>
+                <label>Please select a YRT route:</label>
                 <select id="yrt_routes_options"></select>
             </fieldset>
         </form>
@@ -22,8 +23,48 @@
     <div id="YRT_stops">
         <form id="YRT_stops_form">
             <fieldset>
-                <label>Please select a stop:</label>
+                <label>Please select a YRT stop:</label>
                 <select id="yrt_time_options"></select>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div id="bus_lines">
+    <h3><u>TTC Bus Lines</u></h3>
+    <div id="TTC_routes">
+        <form id="TTC_routes_form">
+            <fieldset>
+                <label>Please select a TTC route:</label>
+                <select id="ttc_routes_options"></select>
+            </fieldset>
+        </form>
+    </div>
+    <div id="TTC_stops">
+        <form id="TTC_stops_form">
+            <fieldset>
+                <label>Please select a TTC stop:</label>
+                <select id="ttc_time_options"></select>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div id="bus_lines">
+    <h3><u>GO Bus Lines</u></h3>
+    <div id="GO_routes">
+        <form id="GO_routes_form">
+            <fieldset>
+                <label>Please select a GO route:</label>
+                <select id="go_routes_options"></select>
+            </fieldset>
+        </form>
+    </div>
+    <div id="GO_stops">
+        <form id="GO_stops_form">
+            <fieldset>
+                <label>Please select a GO stop:</label>
+                <select id="go_time_options"></select>
             </fieldset>
         </form>
     </div>
