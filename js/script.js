@@ -1,11 +1,20 @@
 $(function () {
+    var url = 'bus\ info/routes.txt';
+    jQuery.get(url, function(data){
+        var lines = data.split("\n");
+        for(var i = 1; i < lines.length - 1; i++){
+            var route = lines[i].split(",");
+            var busLine = document.createElement("option");
+            var optTemp = document.createTextNode(route[2]+" "+route[3]);
+            busLine.appendChild(optTemp);
+            yrtBusOps.appendChild(busLine);
+        }
+    });
     var yrtBusOps = document.getElementById("yrt_routes_options");
     var yrtTimeOps = $('yrt_time_options');
 
-    var busLine = document.createElement("option");
-    var optTemp = document.createTextNode("The First Option of Its Kind");
-    busLine.appendChild(optTemp);
-    yrtBusOps.appendChild(busLine);
+
+
 
 });
 // Is there another YRT route
