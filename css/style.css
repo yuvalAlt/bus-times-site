@@ -2,7 +2,7 @@ body {
     margin: 10%;
 }
 
-#bus_lines {
+.bus_lines {
     margin-left: 10%;
     margin-top: 5%;
     padding-right: 30%;
